@@ -1,0 +1,11 @@
+img {
+    width: calc(50% - 10px);
+    margin-bottom: 20px; 
+    object-fit: cover;
+  }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
