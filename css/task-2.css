@@ -1,11 +1,25 @@
-img {
-    width: calc(50% - 10px);
-    margin-bottom: 20px; 
-    object-fit: cover;
-  }
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три колонки в рядку */
+  gap: 10px; /* Проміжок між картинками */
+  max-width: 800px; /* Максимальна ширина галереї */
+  margin: 0 auto; /* Центрування галереї на сторінці */
+  padding: 20px; /* Відступи внутрішньої частини галереї */
+  list-style-type: none; /* Видалення маркерів списку */
+}
+
+.gallery img {
+  max-width: 100%; /* Зображення не перевищуватимуть розмір контейнера */
+  height: auto;
+  display: block; /* Видаляє відступи знизу зображень */
+}
